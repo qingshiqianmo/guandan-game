@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>惯蛋本地原型</title>
+    <link rel="stylesheet" href="/app.css">
+</head>
+<body>
+    <main class="page">
+        <section class="toolbar">
+            <button id="start-button" type="button">开始牌局</button>
+            <button id="restart-button" type="button">重新发牌</button>
+            <button id="play-button" type="button">提交出牌</button>
+            <button id="pass-button" type="button">当前玩家过牌</button>
+            <span id="message" class="message"></span>
+        </section>
+        <section class="status-panel">
+            <div id="summary"></div>
+            <div id="leading-play"></div>
+        </section>
+        <section id="players" class="players"></section>
+        <section class="log-panel">
+            <h2>操作日志</h2>
+            <ul id="logs"></ul>
+        </section>
+    </main>
+    <script src="/app.js"></script>
+</body>
+</html>

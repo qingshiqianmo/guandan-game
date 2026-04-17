@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    font-family: "PingFang SC", "Microsoft YaHei", sans-serif;
+    background: linear-gradient(135deg, #f3efe4, #d8e1d0);
+    color: #1f2a1f;
+}
+
+.page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 24px;
+}
+
+.toolbar,
+.status-panel,
+.log-panel,
+.player-card {
+    background: rgba(255, 255, 255, 0.82);
+    border: 1px solid rgba(31, 42, 31, 0.12);
+    border-radius: 18px;
+    box-shadow: 0 12px 32px rgba(31, 42, 31, 0.08);
+}
+
+.toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: center;
+    padding: 16px;
+}
+
+button {
+    border: 0;
+    border-radius: 999px;
+    background: #2f6f54;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px 16px;
+}
+
+button:hover {
+    background: #255742;
+}
+
+.message {
+    min-height: 24px;
+    font-weight: 700;
+}
+
+.status-panel,
+.log-panel {
+    margin-top: 20px;
+    padding: 16px;
+}
+
+.players {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    margin-top: 20px;
+}
+
+.player-card {
+    padding: 16px;
+}
+
+.player-card.current {
+    border-color: #2f6f54;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 12px;
+}
+
+.card-chip {
+    border: 1px solid rgba(31, 42, 31, 0.18);
+    border-radius: 12px;
+    background: #fff;
+    cursor: pointer;
+    padding: 8px 10px;
+}
+
+.card-chip.selected {
+    background: #2f6f54;
+    color: #fff;
+}
